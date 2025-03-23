@@ -1,11 +1,8 @@
-output "storage_account_name" {
-  value = azurerm_storage_account.storage.name
-}
-
-output "container_name" {
-  value = azurerm_storage_container.static_files.name
-}
-
 output "public_ip" {
-  value = azurerm_public_ip.flask_ip.ip_address
+  value       = azurerm_public_ip.public_ip.ip_address
+  description = "IP publique"
+}
+
+output "vm_public_ip" {
+  value = azurerm_linux_virtual_machine.vm.public_ip_address
 }

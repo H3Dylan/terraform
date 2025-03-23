@@ -1,19 +1,39 @@
 variable "resource_group_name" {
   type    = string
-  default = "rg-flask-tf"
+  default = "resource-group"
 }
 
 variable "location" {
   type    = string
-  default = "westeurope"
+  default = "francecentral"
 }
 
-variable "storage_account_prefix" {
+variable "vm_name" {
   type    = string
-  default = "flaskstor"
+  default = "vm"
 }
 
-variable "container_name" {
+variable "admin_password" {
   type    = string
-  default = "staticfiles"
+  default = "H3hitema@"
+}
+
+variable "storage_account_name" {
+  type    = string
+  default = "storageaccount"
+}
+
+variable "db_name" {
+  type    = string
+  default = "db"
+}
+
+variable "db_username" {
+  type    = string
+  default = "postgresql"
+}
+
+variable "db_password" {
+  type    = string
+  default = "H3hitema@"
 }
